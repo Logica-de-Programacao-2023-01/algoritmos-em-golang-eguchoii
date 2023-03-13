@@ -1,9 +1,14 @@
 func main() {
-	var salario float64
-	fmt.Println("Salário do funcionario:")
-	fmt.Scan(&salario)
-	var convertersd float64
-	convertersd = (15 * salario / 100)
-	salario += convertersd // Aumenta 15% do preço original
-	fmt.Println("Seu salário final é", salario)
+	var diasTrabalhados int
+	var valorDiaria float64
+
+	fmt.Println("Digite o número de dias trabalhados:")
+	fmt.Scan(&diasTrabalhados)
+
+	fmt.Println("Digite o valor da diária:")
+	fmt.Scan(&valorDiaria)
+
+	salario := float64(diasTrabalhados) * valorDiaria
+
+	fmt.Printf("O salário do funcionário é: R$%.2f\n", salario)
 }
