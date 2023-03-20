@@ -9,3 +9,17 @@ func main() {
 	fmt.Printf("Seu IMC é %.2f\n", imc)
 	
 } 
+
+_______________________________________
+
+func main() {
+	var num int
+	fmt.Println("Digite um número inteiro:")
+	fmt.Scan(&num)
+	if num%2 == 0 {
+		fmt.Println("é um número par")
+	} else {
+		fmt.Println("é impar")
+	}
+
+}
