@@ -18,14 +18,14 @@ func main() {
 	var altura, pesoIdeal float64
 	var sexo string
 
-	fmt.Println("Digite sua altura:")
+	fmt.Println("Digite a altura da pessoa em metros:")
 	fmt.Scan(&altura)
 
-	fmt.Println("Digite o gênero (M/F)")
+	fmt.Println("Digite o sexo da pessoa (M/F):")
 	fmt.Scan(&sexo)
 
 	if sexo == "M" {
-		pesoIdeal = (72.2 * altura) - 58
+		pesoIdeal = (72.7 * altura) - 58
 	} else if sexo == "F" {
 		pesoIdeal = (62.1 * altura) - 44.7
 	} else {
@@ -33,20 +33,17 @@ func main() {
 		return
 	}
 
-	fmt.Println("O peso ideal o gênero %s com altura %.2f m é %.2f kg\n", sexo, altura, pesoIdeal)
+	fmt.Printf("O peso ideal para uma pessoa do sexo %s com altura %.2f m é %.2f kg\n", sexo, altura, pesoIdeal)
 
 	var peso float64
-	fmt.Println("Digite o peso em kg:")
+	fmt.Println("Digite o peso da pessoa em kg:")
 	fmt.Scan(&peso)
 
 	if peso < pesoIdeal {
-		fmt.Println("Está abaixo do peso")
-		fmt.Scan(&peso)
-
+		fmt.Println("A pessoa está abaixo do peso ideal")
 	} else if peso > pesoIdeal {
-		fmt.Println("Está acima do peso"){
+		fmt.Println("A pessoa está acima do peso ideal")
 	} else {
-		fmt.Println("Está no peso ideal")
+		fmt.Println("A pessoa está no peso ideal")
 	}
-
 }
