@@ -11,3 +11,26 @@ func main() {
 	fmt.Printf("O triplo de %d é %d\n", num, triplo)
 	fmt.Printf("O quadruplo de %d é %d\n", num, quadruplo)
 }
+
+__________________________________________
+
+func main() {
+	x := 8
+	y := 12
+	z := 20
+
+	if x > y {
+		fmt.Println("x é maior que y")
+
+	} else {
+		fmt.Println("y é maior que x")
+	}
+	if z > y {
+
+		fmt.Println("z é maior que y e x")
+
+	} else {
+		fmt.Println("y é maior que z e x")
+		
+	}
+}
