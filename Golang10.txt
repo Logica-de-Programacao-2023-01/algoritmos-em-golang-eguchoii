@@ -13,3 +13,29 @@ func main() {
 	fmt.Println("Libra para kg:", converterLk)
 
 }
+
+________________________________
+
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var idade int
+
+    fmt.Print("Digite a idade: ")
+    fmt.Scanln(&idade)
+
+    switch {
+    case idade <= 9:
+        fmt.Println("Classificação: mirim")
+    case idade <= 13:
+        fmt.Println("Classificação: infantil")
+    case idade <= 17:
+        fmt.Println("Classificação: juvenil")
+    default:
+        fmt.Println("Classificação: adulto")
+    }
+}
