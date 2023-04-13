@@ -8,3 +8,12 @@ func main() {
 
 	fmt.Printf("Sua idade em dias é: %v\n", dias)
 }
+
+_____________________________
+
+Ler número inteiro n
+Se (n % 3 == 0) E (n % 5 == 0)
+  Escrever "O número é múltiplo de 3 e 5 ao mesmo tempo"
+Senão
+  Escrever "O número não é múltiplo de 3 e 5 ao mesmo tempo"
+Fim Se
