@@ -7,3 +7,20 @@ func main() {
 	preco -= converterpd // Diminui 10% do preço original
 	fmt.Println("Seu preço final é", preco)
 }
+
+_____________________________________
+
+package main
+
+import "fmt"
+
+func main() {
+	var num1, num2, num3 float64
+	fmt.Print("Digite três números reais: ")
+	fmt.Scan(&num1, &num2, &num3)
+
+	if num1 <= num2 && num2 <= num3 {
+		fmt.Println(num1, num2, num3)
+	} else if num1 <= num3 && num3 <= num2 {
+		fmt
+
