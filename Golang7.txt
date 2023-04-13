@@ -12,11 +12,20 @@ func main() {
 
 ________________________________
 
-Ler salário
-Se (salário < 1000)
-  aumento = salário * 0.1
-Senão
-  aumento = salário * 0.05
-Fim Se
-novo_salário = salário + aumento
-Escrever "O novo salário é: " novo_salário
+package main
+
+import "fmt"
+
+func main() {
+	var salario float64
+	fmt.Print("Digite o salário do funcionário: ")
+	fmt.Scan(&salario)
+
+	if salario < 1000 {
+		salario *= 1.1 
+	} else {
+		salario *= 1.05
+	}
+
+	fmt.Println("Novo salário:", salario)
+}
