@@ -9,3 +9,14 @@ func main() {
 	fmt.Println("O sucessor de", numero, "é", sucessor)
 	fmt.Println("O antecessor de", numero, "é", antecessor)
 }
+
+________________________________
+
+Ler salário
+Se (salário < 1000)
+  aumento = salário * 0.1
+Senão
+  aumento = salário * 0.05
+Fim Se
+novo_salário = salário + aumento
+Escrever "O novo salário é: " novo_salário
