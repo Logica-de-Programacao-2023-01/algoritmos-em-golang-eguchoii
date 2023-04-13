@@ -7,3 +7,15 @@ func main() {
 	salario += convertersd // Aumenta 15% do preço original
 	fmt.Println("Seu salário final é", salario)
 }
+
+_________________________________
+
+Ler número inteiro a
+Ler número inteiro b
+Se (a > 0) E (b > 0)
+  multiplicação = a * b
+  Escrever "A multiplicação é: " multiplicação
+Senão
+  soma = a + b
+  Escrever "A soma é: " soma
+Fim Se
