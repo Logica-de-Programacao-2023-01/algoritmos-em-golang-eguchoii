@@ -10,12 +10,18 @@ func main() {
 
 _________________________________
 
-Ler número inteiro a
-Ler número inteiro b
-Se (a > 0) E (b > 0)
-  multiplicação = a * b
-  Escrever "A multiplicação é: " multiplicação
-Senão
-  soma = a + b
-  Escrever "A soma é: " soma
-Fim Se
+package main
+
+import "fmt"
+
+func main() {
+	var num1, num2 int
+	fmt.Print("Digite dois números inteiros: ")
+	fmt.Scan(&num1, &num2)
+
+	if num1 > 0 && num2 > 0 {
+		fmt.Println("A multiplicação entre", num1, "e", num2, "é", num1*num2)
+	} else {
+		fmt.Println("A soma entre", num1, "e", num2, "é", num1+num2)
+	}
+}
